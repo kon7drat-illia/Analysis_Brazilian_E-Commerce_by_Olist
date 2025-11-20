@@ -14,21 +14,20 @@ The Business Goal: The primary objective is to investigate the relationship betw
 ### 1. Data Preparation & Integration:
 * Load all 8 original Olist CSV files into a local SQLite database to create a relational structure. This mimics a real-world production environment where data lives in tables, not flat files.
 
-### 2. Data Extraction & Transformation (SQL):
-* Write a single, comprehensive SQL query to JOIN the necessary tables (e.g., orders, order_items, reviews, customers).
-* Engineer new, calculated features (as required by the lab) directly in SQL. This includes: 
-    * time_to_deliver_days (Time from purchase to delivery)
-    * delivery_status (e.g., 'On Time', 'Late')
-    * freight_to_price_ratio (Shipping cost vs. product price)
+### 2. Data Extraction (SQL):
+* Write a single, comprehensive SQL query using **CTEs (Common Table Expressions)** to aggregate items and payments to avoid data duplication.
+* Use **`LEFT JOIN`** to combine data from the necessary tables (`orders`, `order_items`, `reviews`, `customers`, `payments`) into one unified dataset.
+* Filter the data to retrieve only valid, completed orders (`order_status = 'delivered'`), preparing a raw but clean dataset for Python processing.
 
-### 3. Data Enrichment & Analysis (Python):
-* Load the clean data from the SQL query result into a Pandas DataFrame.
-
-* Enrich the dataset by adding the required external data (e.g., Brazilian national holidays) to create the is_holiday_purchase column.
-
-* Perform the "+" task analysis (EDA) using Matplotlib to find initial insights and correlations between delivery metrics and review scores.
-
-* Export the final, fully enriched DataFrame to a new, clean CSV file.
+### 3. Data Transformation & Enrichment (Python):
+* Load the raw extracted data into a **Pandas DataFrame**.
+* **Feature Engineering:** Calculate new business metrics using Python:
+    * `time_to_deliver_days`: Calculate the actual delivery duration.
+    * `is_late`: Determine if the delivery was delayed compared to the estimated date.
+    * `freight_to_price_ratio`: Analyze shipping costs relative to the product price.
+* **External Data Enrichment:** Add external data (e.g., Brazilian national holidays) to create the `is_holiday_purchase` column for deeper analysis.
+* **Exploratory Data Analysis (EDA):** Conducted a deep-dive statistical analysis to uncover correlations between logistics failures and customer churn.
+* **Data Export:** Prepared and exported a clean, enriched dataset optimized for visualization in Business Intelligence tools (Power BI).
 
 ### 4. Data Visualization (Power BI):
 * Import the final, clean CSV into Power BI.
