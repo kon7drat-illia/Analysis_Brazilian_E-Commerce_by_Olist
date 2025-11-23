@@ -39,6 +39,7 @@ The Business Goal: The primary objective is to investigate the relationship betw
     * A map showing logistics performance by region.
 
     * Charts showing the direct impact of delivery_status on review_score.
+    
 ## 4. Data Source
 The 8 raw .csv files for this project are not included in this repository due to their large size (>100MB).
 
