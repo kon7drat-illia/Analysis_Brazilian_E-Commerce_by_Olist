@@ -45,7 +45,7 @@ The Business Goal: The primary objective is to investigate the relationship betw
 I developed an interactive Power BI dashboard to visualize the insights.
 **Click the image below to explore the live dashboard:**
 
-[![Olist Dashboard](reports/dashboard_preview.png)](https://app.powerbi.com/groups/me/reports/24aa2127-9b7e-41d9-bed1-73a308fe8abf/c31073b138e0c79c7895?experience=power-bi&clientSideAuth=0)
+[![Olist Dashboard](reports/dashboard_preview.png)](https://app.powerbi.com/view?r=eyJrIjoiOWQzZTc1NzQtYWFmMy00N2UzLTkwNmYtYTFmYTRmNzY5OWJlIiwidCI6ImIzZTY4ODgwLTM0OTAtNDZlNi1iMjk1LWEzNmU0YmUyMDcyOCIsImMiOjl9&disablecdnExpiration=1765001858)
 
 *(Note: The dashboard is hosted on Power BI Service using "Publish to Web". If the link doesn't open, please check your firewall settings).*
 
