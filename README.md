@@ -34,13 +34,22 @@ The Business Goal: The primary objective is to investigate the relationship betw
 
 * Build an interactive dashboard to visually answer our key business question. The dashboard will include:
 
-    * KPIs (Total Sales, Avg. Review Score, % Late Deliveries)
+    * KPIs (Total Sales, Avg. Review Score, % Late Deliveries, Total Revenue)
 
     * A map showing logistics performance by region.
 
     * Charts showing the direct impact of delivery_status on review_score.
     
-## 4. Data Source
+## 4. Interactive Dashboard 📊
+
+I developed an interactive Power BI dashboard to visualize the insights.
+**Click the image below to explore the live dashboard:**
+
+[![Olist Dashboard](reports/dashboard_preview.png)](https://app.powerbi.com/groups/me/reports/24aa2127-9b7e-41d9-bed1-73a308fe8abf/c31073b138e0c79c7895?experience=power-bi&clientSideAuth=0)
+
+*(Note: The dashboard is hosted on Power BI Service using "Publish to Web". If the link doesn't open, please check your firewall settings).*
+
+## 5. Data Source
 The 8 raw .csv files for this project are not included in this repository due to their large size (>100MB).
 
 You can download the original dataset directly from Kaggle:
